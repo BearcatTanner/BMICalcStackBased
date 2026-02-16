@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMICalcStackBased.ResultPage"
+             Title="ResultPage"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout
+        BackgroundColor="White"
+        Margin="20"
+        Padding="15"
+        Spacing="15">
+        <Label Text="BMI Result" TextColor="Black" FontSize="Large"/>
+        <Label x:Name="LblBMIValue" FontAttributes="Bold" TextColor="Black" FontSize="Medium" HorizontalOptions="Center"/>
+        <Label Text="Given your selected gender, you fall under the category of:" TextColor="Black" FontSize="Medium" HorizontalOptions="Center"/>
+        <Label x:Name="LblBMICategory" FontAttributes="Bold" TextColor="Black" FontSize="Medium" HorizontalOptions="Center"/>
+        <Button Text="Return to BMI Calculator" Clicked="Button_Clicked" BackgroundColor="Gray" TextColor="White" />
+        <Button Text="Recommendations" Clicked="Button_Clicked_1" BackgroundColor="Gray" TextColor="White"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>
